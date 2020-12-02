@@ -22,7 +22,7 @@
 
 scReguloCity <- methods::setClass("scReguloCity", slots = c(emat = "ANY", 
 	smat = "ANY", nmat = "ANY", emb = "ANY", mappability= "ANY", species ="ANY", gradient="ANY", 
-	gradGenes= "ANY", gradGenesMasked= "ANY", 
+	gradGenes= "ANY", gradGenesMasked= "ANY", filtered="ANY",
 	motif_ref="ANY", vel="ANY", vel.corrected="ANY", tfCorNet="ANY", tfCor="ANY"))
 
 setMethod(f = "show", signature = "scReguloCity", definition = function(object) {

@@ -3,7 +3,7 @@ applyReguloCity <- function (object, minNumCells, neigh, cell.types, minsize=5)
 {
     library(ape)
     emb <- object@emb
-    res <- object@vel.corrected
+    res <- object@vel
     nb_15nn<- frNN(emb[, 1:2], ep=neigh)
     data_list <- nb_15nn$id
     g2 <- graph_from_adj_list(data_list, mode="out")
@@ -30,6 +30,8 @@ applyReguloCity <- function (object, minNumCells, neigh, cell.types, minsize=5)
             g.sub.t <- delete_edges(g2, E(g2)[!filter])
             g.sub <- delete_edges(g.sub.t, E(g.sub.t)[which((as.numeric(E(g.sub.t)$weight))<2)])
 
+             # plot(g.sub, layout = as.matrix(emb[, 1:2]), vertex.size=2, edge.arrow.size=0.2,
+             #  edge.width =  E(g.sub)$weight , vertex.label=NA)
 
             masked <- list()
             direction.l.k <- list()
@@ -73,6 +75,10 @@ applyReguloCity <- function (object, minNumCells, neigh, cell.types, minsize=5)
                       g.sub2 <- delete_edges(g.sub, E(g.sub)[d])
 
                       g <- induced_subgraph(g.sub2, sort(filt))
+
+                      # plot(g, layout = as.matrix(emb[components(g.sub)$membership==clusters[cl], 1:2]), vertex.size=3, 
+                      #   edge.arrow.size=1,
+                      # edge.width =  E(g)$weight , vertex.label=NA)
 
                       xval <- sum(cos(E(g)$direction) * as.numeric(E(g)$weight))
                       yval <- sum(sin(E(g)$direction) * as.numeric(E(g)$weight))
@@ -249,7 +255,7 @@ extractRegulatoryNetwork <- function(object,  minNumGenesInPattern=5)
     TF_list = unique(motifAnnotations$TF)
     patterns <- names(which(table(object@gradGenes$pattern)>minNumGenesInPattern))
     Cor.table.filt.all <- NULL
-    f <- object@vel.corrected[ as.character(unique(object@gradGenes$geneId)),]
+    f <- object@vel[ as.character(unique(object@gradGenes$geneId)),]
     Norm.interest.corr <- corr.test( t(f), method="pearson", ci=F)  
     Norm.interest.corr$p[!(rownames(Norm.interest.corr$p) %in% TF_list), ]=NA
     Pval.adj <- as.data.frame(as.table(Norm.interest.corr$p))
@@ -342,6 +348,3 @@ clusterGenes <- function(object)
   object@gradGenes <- all 
   return(object)
 }
-
-
-

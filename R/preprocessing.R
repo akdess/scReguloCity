@@ -24,9 +24,12 @@ CreateSCReguloCityObject <- function(emat, nmat, smat, emb, species, motif_ref, 
     object@emat <- object@emat[match(common, rownames(object@emat)),]
     object@nmat <- object@nmat[match(common, rownames(object@nmat)),]
     
-    object <- calculateVelocity(object)
+
+    if(is.null(object@smat)) { object <- calculateVelocity(object) }
     
-    object <- correctGCContentAndMappability(object)
+    if(!is.null(object@smat))  {object <- calculateVelocityWithOffset(object) }
+
+ #  object <- correctGCContentAndMappability(object)
     
     return(object)
 }
@@ -64,6 +67,41 @@ calculateVelocity <- function(object)
     object@vel <- vel.mat[, match(common, colnames(vel.mat))]
     return(object)
 }
+
+calculateVelocityWithOffset <- function(object)
+{
+ 
+
+    emat <- object@emat
+    nmat <- object@nmat
+    smat <- object@smat
+    vel.mat <- NULL
+      
+    sfit <- data.frame(do.call(rbind,lapply(1:length(rownames(emat)),function(y) {
+      df <- data.frame(n=(nmat[y,]),e=(emat[y,]),s=smat[y,])
+      sd <- lm(n~s,data=df)
+      r <- with(df[df$s>0,],cor(n,s,method='spearman'),3)
+      return(c(o=pmax(0,as.numeric(sd$coef[1])),s=as.numeric(sd$coef[2]),r=r))
+    })))
+    rownames(sfit) <- rownames(emat)
+
+    
+    vel.mat <- data.frame(do.call(rbind,lapply(1:length(rownames(emat)),function(gn) {
+        df <- data.frame(n=(nmat[gn,]),e=(emat[gn,]),o=sfit[gn,'o'])
+        d <- lm(n~e+offset(o), data=df)
+        return(resid(d))
+    })))
+
+    rownames(vel.mat) <- rownames(emat)
+    colnames(vel.mat) <- colnames(emat)
+    
+    common <- intersect(colnames(vel.mat), rownames(object@emb))
+    object@emb <- object@emb[match(common, rownames(object@emb)),]
+    object@vel <- vel.mat[, match(common, colnames(vel.mat))]
+    return(object)
+
+}
+
 
 #    mappabilty <- read.table("C:\\Users\\aharmanci\\Google Drive\\uthealth\\scPathVelo\\mappability\\mm10_gencode.vM21_intrex_mmap_seq_stats.txt", header=T)
 
