@@ -1,0 +1,16 @@
+Package: scReguloCity
+Type: Package
+Title: Detection of local RNA velocity patterns in embeddings of single-cell RNA-seq data 
+Version: 0.1.0
+Author: Akdes Serin Harmanci, Arif O. Harmanci
+Maintainer: Akdes Serin Harmanci <akdes.harmanci@uth.tmc.edu> 
+Description: 
+Encoding: UTF-8
+LazyData: true
+LinkingTo: Rcpp
+Depends: Rcpp, RcisTarget, pheatmap, igraph, psych, amap, stringr, dplyr, qgraph, cluster,  fpc, dbscan, foreach, circular, rsvd, Matrix, ape
+RoxygenNote: 7.1.1
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
+License: use_mit_license()
