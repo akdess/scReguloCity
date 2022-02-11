@@ -1,0 +1,96 @@
+[2022-02-03 20:30:51] [INFO]    [OmnipathR] Initialized cache: `/Users/akdes/Library/Caches/OmnipathR`.
+[2022-02-03 20:30:52] [INFO]    [OmnipathR] Welcome to OmnipathR!
+[2022-02-03 20:30:53] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/annotations?resources=SignaLink_pathway&entity_types=protein&license=academic`
+[2022-02-03 20:30:53] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/annotations?resources=SignaLink_pathway&entity_types=protein&license=academic`
+[2022-02-03 20:30:53] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/annotations?resources=SignaLink_pathway&entity_types=protein&license=academic`
+[2022-02-03 20:30:55] [INFO]    [OmnipathR] Cache item `6061f30dac10cc2b0f8bcf13f7d870c3d69a0df8` version 1: status changed from `unknown` to `started`.
+[2022-02-03 20:30:55] [TRACE]   [OmnipathR] Exporting object to RDS: `/Users/akdes/Library/Caches/OmnipathR/6061f30dac10cc2b0f8bcf13f7d870c3d69a0df8-1.rds`.
+[2022-02-03 20:30:55] [TRACE]   [OmnipathR] Exported RDS to `/Users/akdes/Library/Caches/OmnipathR/6061f30dac10cc2b0f8bcf13f7d870c3d69a0df8-1.rds`.
+[2022-02-03 20:30:55] [INFO]    [OmnipathR] Download ready [key=6061f30dac10cc2b0f8bcf13f7d870c3d69a0df8, version=1]
+[2022-02-03 20:30:55] [INFO]    [OmnipathR] Cache item `6061f30dac10cc2b0f8bcf13f7d870c3d69a0df8` version 1: status changed from `started` to `ready`.
+[2022-02-03 20:30:55] [SUCCESS] [OmnipathR] Downloaded 1145 annotation records.
+[2022-02-03 20:37:14] [INFO]    [OmnipathR] Looking up in cache `http://www.genome.jp/kegg/pathway.html`: key=b904a8ff714e81cd46b20203a4302aa693e7d546, no version available.
+[2022-02-03 20:37:14] [INFO]    [OmnipathR] Created new version for cache record b904a8ff714e81cd46b20203a4302aa693e7d546: version 1.
+[2022-02-03 20:37:14] [TRACE]   [OmnipathR] Cache file path: /Users/akdes/Library/Caches/OmnipathR/b904a8ff714e81cd46b20203a4302aa693e7d546-1.html
+[2022-02-03 20:37:14] [INFO]    [OmnipathR] Retrieving URL: `http://www.genome.jp/kegg/pathway.html`
+[2022-02-03 20:37:14] [TRACE]   [OmnipathR] Attempt 1/3: `http://www.genome.jp/kegg/pathway.html`
+[2022-02-03 20:37:15] [TRACE]   [OmnipathR] HTTP 200
+[2022-02-03 20:37:17] [TRACE]   [OmnipathR] HTTP 200
+[2022-02-03 20:37:17] [INFO]    [OmnipathR] Download ready [key=b904a8ff714e81cd46b20203a4302aa693e7d546, version=1]
+[2022-02-03 20:37:17] [INFO]    [OmnipathR] Cache item `b904a8ff714e81cd46b20203a4302aa693e7d546` version 1: status changed from `unknown` to `ready`.
+[2022-02-03 20:37:17] [SUCCESS] [OmnipathR] KEGG (www.genome.jp): downloaded 495 records
+[2022-02-03 22:09:18] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/annotations?resources=EGG-PC&entity_types=protein&license=academic`
+[2022-02-03 22:09:18] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/annotations?resources=EGG-PC&entity_types=protein&license=academic`
+[2022-02-03 22:09:18] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/annotations?resources=EGG-PC&entity_types=protein&license=academic`
+[2022-02-03 22:09:19] [INFO]    [OmnipathR] Cache item `f063c60c271891ff5c1d5caf15279a39aff18ad5` version 1: status changed from `unknown` to `started`.
+[2022-02-03 22:09:19] [TRACE]   [OmnipathR] Exporting object to RDS: `/Users/akdes/Library/Caches/OmnipathR/f063c60c271891ff5c1d5caf15279a39aff18ad5-1.rds`.
+[2022-02-03 22:09:19] [TRACE]   [OmnipathR] Exported RDS to `/Users/akdes/Library/Caches/OmnipathR/f063c60c271891ff5c1d5caf15279a39aff18ad5-1.rds`.
+[2022-02-03 22:09:19] [INFO]    [OmnipathR] Download ready [key=f063c60c271891ff5c1d5caf15279a39aff18ad5, version=1]
+[2022-02-03 22:09:19] [INFO]    [OmnipathR] Cache item `f063c60c271891ff5c1d5caf15279a39aff18ad5` version 1: status changed from `started` to `ready`.
+[2022-02-03 22:09:19] [SUCCESS] [OmnipathR] Downloaded 0 annotation records.
+[2022-02-03 22:09:37] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/annotations?resources=KEGG-PC&entity_types=protein&license=academic`
+[2022-02-03 22:09:37] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/annotations?resources=KEGG-PC&entity_types=protein&license=academic`
+[2022-02-03 22:09:37] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/annotations?resources=KEGG-PC&entity_types=protein&license=academic`
+[2022-02-03 22:09:39] [INFO]    [OmnipathR] Cache item `5d29a611026c3c5bf7355e9d93b6007b18f83241` version 1: status changed from `unknown` to `started`.
+[2022-02-03 22:09:39] [TRACE]   [OmnipathR] Exporting object to RDS: `/Users/akdes/Library/Caches/OmnipathR/5d29a611026c3c5bf7355e9d93b6007b18f83241-1.rds`.
+[2022-02-03 22:09:39] [TRACE]   [OmnipathR] Exported RDS to `/Users/akdes/Library/Caches/OmnipathR/5d29a611026c3c5bf7355e9d93b6007b18f83241-1.rds`.
+[2022-02-03 22:09:39] [INFO]    [OmnipathR] Download ready [key=5d29a611026c3c5bf7355e9d93b6007b18f83241, version=1]
+[2022-02-03 22:09:39] [INFO]    [OmnipathR] Cache item `5d29a611026c3c5bf7355e9d93b6007b18f83241` version 1: status changed from `started` to `ready`.
+[2022-02-03 22:09:39] [SUCCESS] [OmnipathR] Downloaded 1869 annotation records.
+[2022-02-03 22:11:01] [TRACE]   [OmnipathR] Loaded data from RDS `/Users/akdes/Library/Caches/OmnipathR/5d29a611026c3c5bf7355e9d93b6007b18f83241-1.rds`.
+[2022-02-03 22:11:01] [INFO]    [OmnipathR] Loaded from cache: `https://omnipathdb.org/annotations?resources=KEGG-PC&entity_types=protein&license=academic`
+[2022-02-03 22:11:01] [SUCCESS] [OmnipathR] Loaded 1869 annotation records from cache.
+[2022-02-03 22:15:44] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/annotations?resources=KEGG&entity_types=protein&license=academic`
+[2022-02-03 22:15:44] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/annotations?resources=KEGG&entity_types=protein&license=academic`
+[2022-02-03 22:15:44] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/annotations?resources=KEGG&entity_types=protein&license=academic`
+[2022-02-03 22:15:46] [INFO]    [OmnipathR] Cache item `81e1aebf64e6e67b531aed242d726a3d884c6c63` version 1: status changed from `unknown` to `started`.
+[2022-02-03 22:15:46] [TRACE]   [OmnipathR] Exporting object to RDS: `/Users/akdes/Library/Caches/OmnipathR/81e1aebf64e6e67b531aed242d726a3d884c6c63-1.rds`.
+[2022-02-03 22:15:46] [TRACE]   [OmnipathR] Exported RDS to `/Users/akdes/Library/Caches/OmnipathR/81e1aebf64e6e67b531aed242d726a3d884c6c63-1.rds`.
+[2022-02-03 22:15:46] [INFO]    [OmnipathR] Download ready [key=81e1aebf64e6e67b531aed242d726a3d884c6c63, version=1]
+[2022-02-03 22:15:46] [INFO]    [OmnipathR] Cache item `81e1aebf64e6e67b531aed242d726a3d884c6c63` version 1: status changed from `started` to `ready`.
+[2022-02-03 22:15:46] [SUCCESS] [OmnipathR] Downloaded 0 annotation records.
+[2022-02-03 22:19:22] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/annotations?resources=DisGeNet,SignaLink_function,DGIdb,kinase.com&entity_types=protein&license=academic`
+[2022-02-03 22:19:22] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/annotations?resources=DisGeNet,SignaLink_function,DGIdb,kinase.com&entity_types=protein&license=academic`
+[2022-02-03 22:19:22] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/annotations?resources=DisGeNet,SignaLink_function,DGIdb,kinase.com&entity_types=protein&license=academic`
+[2022-02-03 22:20:08] [INFO]    [OmnipathR] Cache item `037702055b0ba8830b25fa1919314e00d110ef45` version 1: status changed from `unknown` to `started`.
+[2022-02-03 22:20:08] [TRACE]   [OmnipathR] Exporting object to RDS: `/Users/akdes/Library/Caches/OmnipathR/037702055b0ba8830b25fa1919314e00d110ef45-1.rds`.
+[2022-02-03 22:20:09] [TRACE]   [OmnipathR] Exported RDS to `/Users/akdes/Library/Caches/OmnipathR/037702055b0ba8830b25fa1919314e00d110ef45-1.rds`.
+[2022-02-03 22:20:09] [INFO]    [OmnipathR] Download ready [key=037702055b0ba8830b25fa1919314e00d110ef45, version=1]
+[2022-02-03 22:20:09] [INFO]    [OmnipathR] Cache item `037702055b0ba8830b25fa1919314e00d110ef45` version 1: status changed from `started` to `ready`.
+[2022-02-03 22:20:09] [SUCCESS] [OmnipathR] Downloaded 677688 annotation records.
+[2022-02-03 22:22:20] [TRACE]   [OmnipathR] Loaded data from RDS `/Users/akdes/Library/Caches/OmnipathR/037702055b0ba8830b25fa1919314e00d110ef45-1.rds`.
+[2022-02-03 22:22:20] [INFO]    [OmnipathR] Loaded from cache: `https://omnipathdb.org/annotations?resources=DisGeNet,SignaLink_function,DGIdb,kinase.com&entity_types=protein&license=academic`
+[2022-02-03 22:22:20] [SUCCESS] [OmnipathR] Loaded 677688 annotation records from cache.
+[2022-02-03 22:24:53] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/annotations?resources=Adhesome,Almen2009,Baccin2019,CancerDrugsDB,CancerGeneCensus,CancerSEA,CellCall,CellCellInteractions,CellChatDB,CellChatDB_complex,Cellinker,Cellinker_complex,CellPhoneDB,CellPhoneDB_complex,CellTalkDB,CellTypist,ComPPI,connectomeDB2020,CORUM_Funcat,CORUM_GO,CSPA,CSPA_celltype,DGIdb,DisGeNet,EMBRACE,Exocarta,GO_Intercell,GPCRdb,Guide2Pharma,HGNC,HPA_secretome,HPA_subcellular,HPA_tissue,HPMR,HumanCellMap,ICELLNET,ICELLNET_complex,Integrins,IntOGen,iTALK,KEGG-PC,kinase.com,Kirouac2010,LOCATE,LRdb,Matrisome,MatrixDB,MCAM,Membranome,MSigDB,NetPath,OPM,PanglaoDB,Phobius,Phosphatome,PROGENy,Ramilowski_location,Ramilowski2015,scConnect,scConnect_complex,SignaLink_function,SignaLink_pathway,SIGNOR,Surfaceome,talklr,TCDB,TFcensus,TopDB,UniProt_family,UniProt_keyword,UniProt_location,UniProt_tissue,UniProt_topology,Vesiclepedia,Zhong2015&entity_types=protein&license=academic`
+[2022-02-03 22:24:53] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/annotations?resources=Adhesome,Almen2009,Baccin2019,CancerDrugsDB,CancerGeneCensus,CancerSEA,CellCall,CellCellInteractions,CellChatDB,CellChatDB_complex,Cellinker,Cellinker_complex,CellPhoneDB,CellPhoneDB_complex,CellTalkDB,CellTypist,ComPPI,connectomeDB2020,CORUM_Funcat,CORUM_GO,CSPA,CSPA_celltype,DGIdb,DisGeNet,EMBRACE,Exocarta,GO_Intercell,GPCRdb,Guide2Pharma,HGNC,HPA_secretome,HPA_subcellular,HPA_tissue,HPMR,HumanCellMap,ICELLNET,ICELLNET_complex,Integrins,IntOGen,iTALK,KEGG-PC,kinase.com,Kirouac2010,LOCATE,LRdb,Matrisome,MatrixDB,MCAM,Membranome,MSigDB,NetPath,OPM,PanglaoDB,Phobius,Phosphatome,PROGENy,Ramilowski_location,Ramilowski2015,scConnect,scConnect_complex,SignaLink_function,SignaLink_pathway,SIGNOR,Surfaceome,talklr,TCDB,TFcensus,TopDB,UniProt_family,UniProt_keyword,UniProt_location,UniProt_tissue,UniProt_topology,Vesiclepedia,Zhong2015&entity_types=protein&license=academic`
+[2022-02-03 22:24:53] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/annotations?resources=Adhesome,Almen2009,Baccin2019,CancerDrugsDB,CancerGeneCensus,CancerSEA,CellCall,CellCellInteractions,CellChatDB,CellChatDB_complex,Cellinker,Cellinker_complex,CellPhoneDB,CellPhoneDB_complex,CellTalkDB,CellTypist,ComPPI,connectomeDB2020,CORUM_Funcat,CORUM_GO,CSPA,CSPA_celltype,DGIdb,DisGeNet,EMBRACE,Exocarta,GO_Intercell,GPCRdb,Guide2Pharma,HGNC,HPA_secretome,HPA_subcellular,HPA_tissue,HPMR,HumanCellMap,ICELLNET,ICELLNET_complex,Integrins,IntOGen,iTALK,KEGG-PC,kinase.com,Kirouac2010,LOCATE,LRdb,Matrisome,MatrixDB,MCAM,Membranome,MSigDB,NetPath,OPM,PanglaoDB,Phobius,Phosphatome,PROGENy,Ramilowski_location,Ramilowski2015,scConnect,scConnect_complex,SignaLink_function,SignaLink_pathway,SIGNOR,Surfaceome,talklr,TCDB,TFcensus,TopDB,UniProt_family,UniProt_keyword,UniProt_location,UniProt_tissue,UniProt_topology,Vesiclepedia,Zhong2015&entity_types=protein&license=academic`
+[2022-02-03 22:40:11] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/annotations?proteins=GAD1,GAD2&license=academic`
+[2022-02-03 22:40:11] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/annotations?proteins=GAD1,GAD2&license=academic`
+[2022-02-03 22:40:11] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/annotations?proteins=GAD1,GAD2&license=academic`
+[2022-02-03 22:40:16] [INFO]    [OmnipathR] Cache item `88a132cd6a9968727e10d6f77d531c0170e4a0e5` version 1: status changed from `unknown` to `started`.
+[2022-02-03 22:40:16] [TRACE]   [OmnipathR] Exporting object to RDS: `/Users/akdes/Library/Caches/OmnipathR/88a132cd6a9968727e10d6f77d531c0170e4a0e5-1.rds`.
+[2022-02-03 22:40:16] [TRACE]   [OmnipathR] Exported RDS to `/Users/akdes/Library/Caches/OmnipathR/88a132cd6a9968727e10d6f77d531c0170e4a0e5-1.rds`.
+[2022-02-03 22:40:16] [INFO]    [OmnipathR] Download ready [key=88a132cd6a9968727e10d6f77d531c0170e4a0e5, version=1]
+[2022-02-03 22:40:16] [INFO]    [OmnipathR] Cache item `88a132cd6a9968727e10d6f77d531c0170e4a0e5` version 1: status changed from `started` to `ready`.
+[2022-02-03 22:40:16] [SUCCESS] [OmnipathR] Downloaded 3389 annotation records.
+[2022-02-03 22:41:19] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/annotations?resources=CellTalkDB&entity_types=protein&license=academic`
+[2022-02-03 22:41:19] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/annotations?resources=CellTalkDB&entity_types=protein&license=academic`
+[2022-02-03 22:41:19] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/annotations?resources=CellTalkDB&entity_types=protein&license=academic`
+[2022-02-03 22:41:22] [INFO]    [OmnipathR] Cache item `c97f2c11614ce3b6a6e5df07deacbcf00e2ef361` version 1: status changed from `unknown` to `started`.
+[2022-02-03 22:41:22] [TRACE]   [OmnipathR] Exporting object to RDS: `/Users/akdes/Library/Caches/OmnipathR/c97f2c11614ce3b6a6e5df07deacbcf00e2ef361-1.rds`.
+[2022-02-03 22:41:22] [TRACE]   [OmnipathR] Exported RDS to `/Users/akdes/Library/Caches/OmnipathR/c97f2c11614ce3b6a6e5df07deacbcf00e2ef361-1.rds`.
+[2022-02-03 22:41:22] [INFO]    [OmnipathR] Download ready [key=c97f2c11614ce3b6a6e5df07deacbcf00e2ef361, version=1]
+[2022-02-03 22:41:22] [INFO]    [OmnipathR] Cache item `c97f2c11614ce3b6a6e5df07deacbcf00e2ef361` version 1: status changed from `started` to `ready`.
+[2022-02-03 22:41:22] [SUCCESS] [OmnipathR] Downloaded 9204 annotation records.
+[2022-02-03 22:42:43] [TRACE]   [OmnipathR] Loaded data from RDS `/Users/akdes/Library/Caches/OmnipathR/c97f2c11614ce3b6a6e5df07deacbcf00e2ef361-1.rds`.
+[2022-02-03 22:42:43] [INFO]    [OmnipathR] Loaded from cache: `https://omnipathdb.org/annotations?resources=CellTalkDB&entity_types=protein&license=academic`
+[2022-02-03 22:42:43] [SUCCESS] [OmnipathR] Loaded 9204 annotation records from cache.
+[2022-02-03 22:42:48] [TRACE]   [OmnipathR] Loaded data from RDS `/Users/akdes/Library/Caches/OmnipathR/c97f2c11614ce3b6a6e5df07deacbcf00e2ef361-1.rds`.
+[2022-02-03 22:42:48] [INFO]    [OmnipathR] Loaded from cache: `https://omnipathdb.org/annotations?resources=CellTalkDB&entity_types=protein&license=academic`
+[2022-02-03 22:42:48] [SUCCESS] [OmnipathR] Loaded 9204 annotation records from cache.
+[2022-02-03 22:43:23] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/annotations?resources=MSigDB&entity_types=protein&license=academic`
+[2022-02-03 22:43:23] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/annotations?resources=MSigDB&entity_types=protein&license=academic`
+[2022-02-03 22:43:23] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/annotations?resources=MSigDB&entity_types=protein&license=academic`
+[2022-02-03 22:45:45] [TRACE]   [OmnipathR] Loaded data from RDS `/Users/akdes/Library/Caches/OmnipathR/88a132cd6a9968727e10d6f77d531c0170e4a0e5-1.rds`.
+[2022-02-03 22:45:45] [INFO]    [OmnipathR] Loaded from cache: `https://omnipathdb.org/annotations?proteins=GAD1,GAD2&license=academic`
+[2022-02-03 22:45:45] [SUCCESS] [OmnipathR] Loaded 3389 annotation records from cache.

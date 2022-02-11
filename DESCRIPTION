@@ -1,16 +1,17 @@
-Package: scReguloCity
+Package: scram
 Type: Package
-Title: Detection of local RNA velocity patterns in embeddings of single-cell RNA-seq data 
+Title: 
 Version: 0.1.0
-Author: Akdes Serin Harmanci, Arif O. Harmanci
-Maintainer: Akdes Serin Harmanci <akdes.harmanci@uth.tmc.edu> 
-Description: 
+Author:  Rachel Naomi Curry, Arif O. Harmanci, Akdes Serin Harmanci
+Maintainer: Akdes Serin Harmanci <akdes.serinharmanci@bcm.edu>
+Description: Identification of transdifferentiated immune and neuronal tumor cells in glioblastoma using frequent itemset approach
 Encoding: UTF-8
 LazyData: true
 LinkingTo: Rcpp
-Depends: Rcpp, RcisTarget, pheatmap, igraph, psych, amap, stringr, dplyr, qgraph, cluster,  fpc, dbscan, foreach, circular, rsvd, Matrix, ape
-RoxygenNote: 7.1.1
+Depends: Rcpp, dplyr, Seurat, arules,  ggplot2, foreach 
+RoxygenNote: 6.1.1
+biocViews:
 Suggests: knitr,
     rmarkdown
 VignetteBuilder: knitr
-License: use_mit_license()
+URL: https://akdess.github.io/scram/
