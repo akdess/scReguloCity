@@ -1,6 +1,6 @@
 ### Overview
 
-**scRegulocity** is publicly available from https://github.com/akdess/scRegulocity
+**scRegulocity** is publicly available from https://akdess.github.io/scReguloCity/
 
 This vignette shows the basic steps for running scRegulocity.
 
